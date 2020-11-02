@@ -4,7 +4,7 @@ from sklearn import svm
 x = [[2, 0], [1, 1], [2, 3]]
 # y 为三个实例所对应的分类标记，此例子中只有两个类（绿色直线左边、绿色直线右边两类），分别使用 0、1 代表
 y = [0, 0, 1]
-# 通过 svm 建立模型。kernel='linear' 线性盒函数
+# 通过 SVM 建立模型。kernel='linear' 线性盒函数
 clf = svm.SVC(kernel='linear')
 clf.fit(x, y)
 
